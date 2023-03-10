@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "break-cycles"
+version = "0.1.0"
+description = "Identify minimal changes to remove cycles from a graph"
+authors = ["Your Name <you@example.com>"]
+license = "BSD 3-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+networkx = "^3.0"
+numpy = "^1.24.2"
+trueskill = "^0.4.5"
+pandas = "^1.5.3"
+scipy = "^1.10.1"
+matplotlib = "^3.7.1"
+typer = "^0.7.0"
+rich = "^13.3.2"
+pipdeptree = "^2.5.2"
+
+[tool.poetry.scripts]
+break-cycles = 'break_cycles:app'
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
